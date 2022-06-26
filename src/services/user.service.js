@@ -3,7 +3,7 @@ import axios from 'axios'
 
 // const getUserData = (jwt) = request({ url: `authorization/userData`, method: 'post', Authorization: `Bearer ${jwt}`})
 // const getUserData = (jwt) => request({ url: `authorization/userData`, method: 'post', data: {}, headers: { 'Authorization': `bearer ${jwt}` } })
-const getUserData = async (jwt) => await axios.post('http://localhost:8081/api/v1/authorization/userData', {}, { headers: {
+const getUserData = async (jwt) => await axios.post('https://sidelnik-backend.herokuapp.com/api/v1/authorization/userData', {}, { headers: {
     'Authorization': `bearer ${jwt}`
 }})
 

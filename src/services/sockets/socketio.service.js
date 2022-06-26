@@ -7,7 +7,7 @@ class SocketioService {
   }
 
   setupSocketConnection(data) {
-    this.socket = io('http://'+location.hostname+':8081');
+    this.socket = io('https://sidelnik-backend.herokuapp.com/');
     this.socket.emit('userJoin', data, cb => {
       this.userSocketId = cb.userSocketId
     })
