@@ -1,8 +1,8 @@
 <template>
-<div>
-  <TheHeader :categories="categories" :userData="userData" :isAuthorized="isAuthorized" :isAdmin="isAdmin" />
-  <router-view :key="$route.path" />
-</div>
+  <div>
+    <TheHeader :categories="categories" :userData="userData" :isAuthorized="isAuthorized" :isAdmin="isAdmin" />
+    <router-view :key="$route.path" />
+  </div>
 </template>
 
 <script>

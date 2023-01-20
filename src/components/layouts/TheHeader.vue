@@ -2,7 +2,7 @@
   <header class="header">
     <nav>
       <div class="nav-wrapper">
-        <!-- <router-link to="/" class="brand-logo">Logo</router-link> -->
+      <router-link to="/" class="brand-logo center">На главную</router-link>
         <ul class="right">
           <li v-if="isAdmin"><router-link to="/admin/products-manager">Управление контентом</router-link></li>
           <li v-if="isAuthorized"><router-link to="/chat">Чат с поставщиком</router-link></li>
@@ -86,5 +86,8 @@ export default {
       position: relative;
       cursor: pointer;
     }
+  }
+  .brand-logo {
+    font-size: 24px;
   }
 </style>
